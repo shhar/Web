@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<title>
+Calculate Interest
+</title>
+</head>
+<body bgcolor="#FFFACD">
+<center><p><font size="8" ; color="magenta"> <strong>
+Compute the amount in the account at the end of each year for 'n' years.
+</strong>
+</font>
+</p>
+</center>
+<hr color = "blue">
+<font size="6" color="magenta"><strong>
+<br>
+Enter the principle amount:<input type="text" id="p" onblur="de1()"><br>
+Enter the rate of interest(anually):<input type="text" id="r" onblur="de2()"><br>
+Enter the time (in years):<input type="text" id="t" onblur="de2()"><br>
+<hr color = "blue">
+<center>
+<button onclick="si()"><font size="6" color="magenta">calculate</font></button><br>
+<hr color = "blue">
+The simple interest for the given amount is:<input id="o">
+</strong></font>
+</center>
+<hr color = "blue">
+<hr color = "blue">
+<script>
+
+function de1(){
+var a=Number(document.getElementById("p").value);
+if(a==0)
+ {window.alert("Please fill out this field");
+  }
+}
+function de2(){
+var b=Number(document.getElementById("r").value);
+if(b==0)
+ {window.alert("Please fill out this field");
+  }
+}
+function de3(){
+var c=Number(document.getElementById("t").value);
+if(c==0)
+ {window.alert("Please fill out this field");
+  }
+}
+function si(){
+var a=Number(document.getElementById("p").value);
+var b=Number(document.getElementById("r").value);
+var c=Number(document.getElementById("t").value);
+var val=(a*b*c)/100;
+document.getElementById("o").value=val;
+}
+</script>
+</body>
+</html>

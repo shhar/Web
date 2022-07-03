@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+<TITLE>
+FIND SUM AND AVERAGE
+</TITLE>
+</HEAD>
+<BODY BGCOLOR="CYAN">
+<br>
+<hr color = "red">
+<CENTER><FONT SIZE ="7" COLOR="BLUE">ENTER NUMBERS(separated by comma like 10, 20, 30):<input type="text" id="n" onchange="copyval()"><br>
+
+<button onclick="find()"><font size=6 color="blue">find</font></button><br>
+Sum is:<input id="sum"><br>
+Average is:<input id="avg">
+</font>
+</center>
+
+
+<script>
+ var arr=new Array();
+  function copyval(){
+   var str=document.getElementById("n").value;
+   arr=str.split(",");
+   for(var i=0;i<arr.length;i++)
+    {
+      arr[i]=Number(arr[i]);
+      
+    }
+   }
+function find(){
+var s=0;
+for(var i=0;i<arr.length;i++)
+    {
+       s=s + arr[i];
+      
+    }
+
+document.getElementById("sum").value=s;
+var average=s/arr.length;
+document.getElementById("avg").value=average;
+ }
+ 
+</script>
+<hr color= "red">
+</body>
+</html>  

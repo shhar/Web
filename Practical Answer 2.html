@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Find largest Number out of three</title>
+</head>
+<body bgcolor= "peachpuff">
+<center><font face="arial" size="5" color="blue">
+<br>
+Click CHECK to find the greatest number
+ <br> </center>
+
+<hr color="red">
+<br>
+
+Enter 1st Number: <input type="text" id="num1"><br>
+Enter 2nd Number:<input type="text" id="num2"><br>
+Enter 3rd Number :<input type="text" id="num3"><br>
+  <hr color="red">
+
+<center><button onclick="largest()">check</button><br>
+  <hr color="red">
+Greatest number is:<input id="product"><br></font></center>
+<script>
+function largest(){
+var a = Number(document.getElementById("num1").value);
+var b = Number(document.getElementById("num2").value);
+var c = Number(document.getElementById("num3").value);
+
+if(a>b &&a>c)
+ {if(a>c)
+  {
+    document.getElementById("product").value=a;
+  }
+ }
+else if(b>a &&b>c)
+ { if(b>c)
+  {
+document.getElementById("product").value=b;
+  }
+ }
+else if(c>a &&c>b)
+ {
+document.getElementById("product").value=c;
+ }
+ 
+}
+</script>
+<hr color="lime">
+<hr color="lime">
+
+
+</body>
+</html>
