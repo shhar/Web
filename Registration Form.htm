@@ -1,0 +1,102 @@
+<!DOCTYPE html>  
+<html>
+<head><center><h1><u><b>Hotel Guest Registration Form</b></u></h1></center>
+<style>
+input {
+  width: 80%;
+padding: 5px 15px;
+  margin: 2px 0;
+  box-sizing: border-box;
+  text-align:center;
+}
+table, th, td 
+{border: 1px solid black;
+border-collapse: collapse;}
+</style>
+</head>
+<body style="background-color:SlateBlue">
+<table style width=100% cellpadding="10px" cellspacing="5px">
+<tr>
+<th colspan=2>First Name</th>
+<th><form><input type="text"></form>
+<th colspan=2>Last Name</th>
+<th><form><input type="text"></form>
+</tr>
+<tr><th colspan=6> Address </th></tr>
+<tr><th colspan=2> Street Address </th> <td colspan=4><form><input type="text"></form></tr>
+<tr><th colspan=2> Street Address 2 </th> <td colspan=4><form><input type="text"></form></tr>
+<tr>
+<th>City</th>
+<th><form><input type="text"></form>
+<th>State/Province</th>
+<th><form><input type="text"></form>
+<th>Zip/Postal Code</th>
+<th><form><input type="text"></form>
+</tr>
+<tr><th colspan=2> E-mail</th> <td colspan=4><form><input type="text"></form></tr>
+<tr><th colspan=2> Phone Number </th> <td colspan=4><form><input type="text"></form></tr>
+<tr><th colspan=6> Booking Information </th></tr>
+<tr>
+<th colspan=2>Check-in Date</th>
+<th><form><input type="date"></form>
+<th colspan=2>Check-out Date</th>
+<th><form><input type="date"></form>
+</tr>
+<tr>
+<th colspan=3>Number of Guests in Room</th>
+<th colspan=3><form><input type="text"></form></tr>
+<tr>
+<th colspan=2>Room Type</th>
+  <label for="Room">Room Type</label>
+  <select id="Room" name="Room">
+    <option value="Luxury">Luxury</option>
+    <option value="Classic">Classic</option>
+  </select>
+</th>
+<th><form><input type="text"></form>
+<th colspan=2>Smoking Room</th>
+<th><form><input type="text"></form>
+</tr>
+<tr>
+<th colspan=3>
+Least Pocket Wifi($5)<br>
+<form>
+  <input type="radio" id="Yes" name="Least_Pocket_Wifi($5)" value="Yes">
+  <label for="Yes">Yes</label><br>
+  <input type="radio" id="No" name="Least_Pocket_Wifi($5)" value="No">
+  <label for="No">No</label>
+</form>
+</th> 
+<th colspan=3 >
+Free Shuttle Service<br>
+<form>
+  <input type="radio" id="Yes" name="Free_Shuttle_Service" value="Yes">
+  <label for="Yes">Yes</label><br>
+  <input type="radio" id="No" name="Free_Shuttle_Service" value="No">
+  <label for="No">No</label>
+</form>
+</tr>
+
+<tr>
+<th colspan=3>Total Amount</th>
+<th colspan=3><form><input type="text"></form></th>
+</tr>
+<tr>
+<th colspan=2>Notes/Special Requirements</th>
+<th colspan=4><form><input tupe="text"></form></th>
+</tr>
+</table>
+<br>
+<center>
+<form>
+  <input type="submit" value="Submit">
+</form> 
+</center>
+<hr>
+<p>The submission of this form makes a reservation for the type of room selected in the form. Any changes prior the scheduled occupancy should be communicated to us at least 24 hours prior, which may be subject to availability of request.
+<br><br>
+Check-in time shall be at 2:00PM and checkout time shall be at 12:00NN. 
+<br> For any further queries please visit the <a href="https://www.tourism.rajasthan.gov.in/#"> website </a>
+
+</body>
+</html>
